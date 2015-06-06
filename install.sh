@@ -1,3 +1,4 @@
+#! /bin/bash
 # Installation script
 
 mkdir .nvim
