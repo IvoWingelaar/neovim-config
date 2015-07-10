@@ -11,17 +11,25 @@ Plug 'scrooloose/nerdtree', { 'on' : 'NERDTreeToggle' }
 Plug 'scrooloose/syntastic' 
 Plug 'Xuyuanp/nerdtree-git-plugin', { 'on' : 'NERDTreeToggle' }
 Plug 'bling/vim-airline'
-Plug 'Valloric/YouCompleteMe', { 'do' : './install.sh --clang-completer --system-libclang --system-boost' }
+"Plug 'Valloric/YouCompleteMe', { 'do' : './install.sh --clang-completer --system-libclang --system-boost' }
 Plug 'kien/ctrlp.vim'
 Plug 'wting/rust.vim'
 Plug 'klen/python-mode'
-Plug 'majutsushi/tagbar'
+"Plug 'majutsushi/tagbar'
 
 " Must be loaded together.
-Plug 'xolox/vim-easytags'
-Plug 'xolox/vim-misc' 
+"Plug 'xolox/vim-easytags'
+"Plug 'xolox/vim-misc' 
 
 call plug#end()
+
+syntax enable
+set number
+set ts=4
+set autoindent
+set expandtab
+set shiftwidth=4
+set showmatch
 
 map <C-n> :NERDTreeToggle<CR>
 map <C-c> :e ~/.nvimrc<CR>
