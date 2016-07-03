@@ -46,8 +46,10 @@ syntax enable
 colorscheme solarized
 set background=dark
 
+" Mixed numbering mode.
 set relativenumber
 set number
+
 set ts=4
 set autoindent
 set expandtab
@@ -89,7 +91,7 @@ nnoremap <F5> :UndotreeToggle<CR>
 
 let g:airline#extensions#tabline#enabled = 1
 let g:ycm_rust_src_path = '/usr/local/rust/rustc-1.5.0/src'
-let g:ycm_global_ycm_extra_conf = '~/.nvim/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf = '~/.config/nvim/ycm_extra_conf.py'
 
 
 let g:UltiSnipsExpandTrigger = "<c-i>"
